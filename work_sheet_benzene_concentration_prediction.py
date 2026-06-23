@@ -728,8 +728,6 @@ print(comparison_df.to_string(index=False))
 
 """##Forecasting"""
 
-pip install fastapi uvicorn pydantic streamlit nest_asyncio pyngrok joblib
-
 import joblib
 
 # Option A: If you want to save your Random Forest Model
@@ -806,14 +804,3 @@ print("Success! benzene_model.pkl has been created and saved to your workspace."
 #         st.error("⚠️ High Pollution Warning: Detected values exceed baseline conditions.")
 #     else:
 #         st.success("✅ Normal Range: Air sample matches clean baseline patterns.")
-
-# 1. Install localtunnel
-!npm install -g localtunnel
-
-# 2. Print your Tunnel Password (Your Colab public IP)
-print("\n--- COPY THIS PASSWORD FOR LOCALTUNNEL ---")
-!curl ipv4.icanhazip.com
-print("------------------------------------------\n")
-
-# 3. Run Streamlit AND localtunnel together safely
-!streamlit run app.py --server.port 8501 & npx localtunnel --port 8501
