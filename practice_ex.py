@@ -30,7 +30,6 @@ from sklearn.model_selection import KFold, cross_val_score
 # evaluation metrics
 from sklearn.metrics import accuracy_score, confusion_matrix, precision_score, recall_score
 
-!pip install streamlit
 import streamlit as st
 
 """LOAD DATA SET"""
